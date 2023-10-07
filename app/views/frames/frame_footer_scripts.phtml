@@ -1,0 +1,67 @@
+</div>
+<script type='text/javascript' charset='UTF-8'>
+
+ // ~~~ COOKIES
+	var subscribed, visited = false;
+	var str;
+
+	subscribed = getCookie("subscribed");
+	visited = getCookie("visited");
+
+	if (visited) {
+			if (subscribed) {
+					document.getElementById('subscribe_widget').style.display = "none";
+			}
+	} else {
+			alert('Welcome as GUEST for 60 minutes!');
+			var d = new Date();
+			var t = d.getTime();
+			d.setTime(d.getTime() + (60000*60));
+			var expires = "expires="+d.toUTCString();
+			document.cookie="visited=true; "+expires+" path=/";
+			usrA = navigator["userAgent"];
+			//str = 'core/controllers/visitCounter.php?d=' + usrA;
+			// str = str + "_ip:" + "ip";
+			//console.log(str);
+			// window.location = str;
+	}
+
+	function getCookie(cname) {
+   var name = cname + "=";
+   var ca = document.cookie.split(';');
+   for(var i=0; i<ca.length; i++) {
+     var c = ca[i];
+     while (c.charAt(0)==' ') c = c.substring(1);
+     if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
+   }
+   return "";
+	}
+ // ~~~ END COOKIES
+
+ // ~~~ ANCHOR NAVBAR WHEN SCROLLING DOWN PAST 150px
+ addEventListener("scroll",(event)=>{
+   setTimeout(function(){
+     scrolltop=$(this).scrollTop();
+     if ( scrolltop <= 150 ) {
+       document.getElementById("navbar").classList.remove("fixed");
+     } else {
+       document.getElementById("navbar").classList.add("fixed");
+     }
+     if( scrolltop >= window.innerHeight / 2.4 ) {
+       document.getElementById("jumptop").classList.remove("hidden");
+     } else {
+       document.getElementById("jumptop").classList.add("hidden");
+     }
+   },100);
+
+ });
+ // ~~~ END ANCHOR NAVBAR
+ 
+ document.getElementById( "debug" ).innerHTML = "UserAgent: " + navigator[ "userAgent" ] + "<br/><hr/> Dimensions, W:" + window.innerWidth + " x H:" + window.innerHeight + "<br/><hr/>All Cookies: " + document.cookie + "<br/><hr/>IP is: " + "ip <br/>";
+
+ console.log( "document ready" );
+
+</script>
+
+  </body>
+</html>

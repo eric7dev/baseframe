@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title><?php echo $ENV_CONS['SITENAME']."/".ucfirst($ENV_VARS['CURRENTPAGE']); ?></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="shortcut icon" href="icons/favicon_baseq.svg" sizes="any" type="image/svg+xml" />
+    <link type="text/css" rel="stylesheet" media="screen" charset="UTF-8" href="css/styles.css" />
+    <!-- link type="text/css" rel="stylesheet" media="screen" charset="UTF-8" href="css/bootstrap.css" -->
+    <script type="text/javascript" src="libs/jquery-3.6.4.js"></script>
+    <script type="text/javascript" src="libs/javascript.js"></script>
+  </head>
+
+  <body>
+    <div id="topbar">
+      <div id="logo"><a href="?url=home"><img src="icons/favicon_baseq.svg" alt="Logo"/></a></div>
+      <h1 id="sitename"><?php echo $ENV_CONS['SITENAME']; ?></h1>
+      <div id="useravatar">
+        <a href="?url=userprofile">
+          <figure>
+            <img width="64" height="64" src="imgs/avatars/avatar_<?php echo $_SESSION['user']; ?>.png"  />
+            <figcaption><?php echo $_SESSION['user']; ?></figcaption>
+          </figure>
+        </a>
+        <span id="userstatus" class="loggedout" title="Status" alt="Status">●</span>
+      </div>
+      <ul id="usermenu">
+        <li class="<?php if( $_SESSION['user'] != 'guest' ){ echo 'hide'; } ?>">
+          <a href="?url=login">
+            <img width="30" height="30" src="icons/users/dialog-password_32.png" title="Login" />
+          </a>
+        </li>
+        <li class="<?php if( $_SESSION['user'] == 'guest' ){ echo 'hide'; } ?>">
+          <a href="?url=logout">
+            <img width="25" height="25" src="icons/bootstrap_bulk/power-light.svg" title="Logout" />
+          </a>
+        </li>
+        <li class="<?php if( $_SESSION['user'] != 'guest' ){ echo 'hide'; } ?>">
+          <a href="?url=signin">
+            <img width="30" height="30" src="icons/users/new_32.png" title="Signin" />
+          </a>
+        </li>
+	     </ul>
+    </div>
+
+    <div id="main_wrapper">
+      <?php #var_dump($ENV_VARS); ?>
+      <?php 
+      #if( true ) {
+      # cookie already set, do nothing
+      #} else {
+      # set cookie for 30 mins
+      #$d = "true";
+      #setcookie( "subscribed", $d, time()+30, "/","",0 );
+      #}
+      ?>

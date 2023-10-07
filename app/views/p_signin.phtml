@@ -1,0 +1,11 @@
+<div id="signin_wrapper">
+  <h1>Signin</h1>
+  <p>Please enter your information.</p>
+  <form id="signin_form" method="POST" action="index.php?url=signinform" onSubmit="console.log('test');'">
+    <input id="username" type="text" placeholder="Your User Name:" name="username" value="<?php echo $_POST['username']; ?>" /><br/>
+    <input id="useremail" type="text" placeholder="Your Email:" name="useremail" value="<?php echo $_POST['useremail']; ?>" /><br/>
+    <input id="userpass" type="text" placeholder="Your Password:" name="userpass" value="<?php echo $_POST['userpass']; ?>" /><br/>
+    <input type="submit" value="CREATE ACCOUNT" /><br/>
+  </form>
+  <script>document.getElementById('username').focus();</script>
+</div>

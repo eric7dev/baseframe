@@ -1,0 +1,10 @@
+<svg height="100" width="100">
+  <rect height="100" width="100" x="0" y="0" fill="black"/>
+  <rect height="50" width="40" x="30" y="35" stroke="green" stroke-width="4" stroke-linejoin="round"/>
+  <line x1="49" y1="27" x2="51" y2="27" stroke="green" stroke-width="10" stroke-linecap="round"/>
+  <line x1="38" y1="32" x2="62" y2="32" stroke="green" stroke-width="8" stroke-linecap="round"/>
+  <line x1="28" y1="35" x2="72" y2="35" stroke="green" stroke-width="8" stroke-linecap="round"/>
+  <line x1="40" y1="45" x2="40" y2="75" stroke="green" stroke-width="3" stroke-linecap="round"/>
+  <line x1="60" y1="45" x2="60" y2="75" stroke="green" stroke-width="3" stroke-linecap="round"/>
+  <line x1="50" y1="45" x2="50" y2="75" stroke="green" stroke-width="3" stroke-linecap="round"/>
+</svg>

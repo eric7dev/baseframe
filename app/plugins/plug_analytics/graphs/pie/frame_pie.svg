@@ -1,0 +1,15 @@
+<svg width="200" height="200" viewBox="0 0 300 300">
+  <ellipse x1="0" y1="0"
+  	       rx="150" ry="150"
+	         transform="translate(150 150) rotate(0)"
+	         fill="black" stroke="red" stroke-widh="1"/>
+  <line x1="150" y1="150"
+        x2="300" y2="150"
+        stroke="red" stroke-width="1"/>
+  <line x1="150" y1="150"
+        x2="150" y2="300"
+        stroke="red" stroke-width="1"/>
+  <line x1="150" y1="150"
+        x2="152" y2="298"
+        stroke="red" stroke-width="1"/>
+</svg>

@@ -1,0 +1,20 @@
+#subscribe {
+    border:1px dotted #ff0;
+}
+#subscribe input {
+    border:1px solid #0f0;
+    width:98.5%;
+    padding:3px;
+    margin:3px;
+    background-color: #333;
+    color: #AFA;
+    font-size:1em;
+}
+#subscribe input[type="submit"] {
+    background-color: #040;
+    color: #0F0;
+}
+#subscribe input[type="submit"]:hover {
+    color:#ff0;
+    background-color: #090;
+}

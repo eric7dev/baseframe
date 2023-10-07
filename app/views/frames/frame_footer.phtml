@@ -1,0 +1,32 @@
+<div id="footer">
+  <ul id="footer_info">
+    <li><h3>Lorem ipsum dolor sit amet</h3>consectetur adipiscing elit. Sed iaculis tellus tristique dolor sagittis blandit. Nunc vitae dolor facilisis metus feugiat tempus. Sed ligula massa, suscipit in mollis a, dignissim quis est. Suspendisse ut viverra eros. </li>
+    <li><h3>Cras vehicula, ligula id dictum vestibulum</h3>velit nisi rutrum est, eget tempus lorem urna in eros. Donec consequat, neque eget ornare ullamcorper, eros libero lacinia mi, in tempus odio leo non lorem. Aliquam erat volutpat. Cras consequat metus in lorem semper ac pretium lectus sagittis.</li>
+  </ul>
+  <div id="footer_navbar">
+    <ul>
+      <li class="<?php if( $ENV_VARS['CURRENTPAGE'] == 'home' ){ echo 'active'; } ?>">
+        <a href="?url=home">Home</a>
+      </li>
+      <li class="<?php if( $ENV_VARS['CURRENTPAGE'] == 'services' ){ echo 'active'; } ?>">
+        <a href="?url=services">Services</a>
+      </li>
+      <li class="<?php if( $ENV_VARS['CURRENTPAGE'] == 'contact' ){ echo 'active'; } ?>">
+        <a href="?url=contact">Contact</a>
+      </li>
+      <li class="<?php if( $ENV_VARS['CURRENTPAGE'] == 'blog' ){ echo 'active'; } ?>">
+        <a href="?url=blog">Blog</a>
+      </li>
+      <li class="<?php if( $ENV_VARS['CURRENTPAGE'] == 'userprofile' ){ echo 'active'; } ?>">
+        <a href="?url=userprofile">Profile</a>
+      </li>
+      <li class="<?php if( $ENV_VARS['CURRENTPAGE'] == 'login' ){ echo 'active'; } ?>">
+        <a href="?url=login">Login</a>
+      </li>
+      
+    </ul>
+  </div>
+  <p class="reserved">All rights reserved. &copy; 2023 <i><?php echo $ENV_CONS["SITENAME"]; ?></i>&trade; &reg;</p>
+
+  <span id="jumptop" class="hidden"><a href="#main_wrapper">^ JUMP TOP</a></span>
+</div>

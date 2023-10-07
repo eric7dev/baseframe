@@ -1,0 +1,19 @@
+<div id="search" class="view">
+	 <div class="featured">
+		  <h1>Search Page</h1>
+		  <p>Results for <span style="color:#ff0">"<?php echo $_GET['query']; ?>"</span>:</p>
+    <ul class="results">
+      <?php
+      for ( $x = 0; $x != 10; $x++ ) {
+      echo "
+      <li>
+        <a href='?p=post$x'>post title $x</a>
+        <p>post $x description</p>
+        <img src='$x' alt='post $x thumbnail'/>
+      </li>
+      ";
+      }
+      ?>
+    </ul>
+	 </div>
+</div>

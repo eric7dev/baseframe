@@ -1,0 +1,12 @@
+<div id="contact_wrapper">
+  <h1>Contact</h1>
+  <p>Please let us know any inquiry you may have.</p>
+  <form id="contact_form" method="POST" action="index.php?url=contactform" onSubmit="console.log('test');'">
+    <input id="contactname" type="text" placeholder="Your Name:" name="name" value="<?php echo $_GET['name']; ?>" /><br/>
+    <input type="text" placeholder="Your Email:" name="email" value="<?php echo $_GET['email']; ?>" /><br/>
+    <input type="text" placeholder="Subject:" name="subject" value="<?php echo $_GET['subject']; ?>" /><br/>
+    <textarea placeholder="Your Message:" name="message"/><?php echo $_GET['message']; ?></textarea><br/>
+    <input type="submit" value="SEND MESSAGE"><br/>
+  </form>
+  <script>document.getElementById('contactname').focus();</script>
+</div>

@@ -1,0 +1,16 @@
+/* 640x480 ~ LANDSCAPE */
+@media all and (min-width:640px) and (orientation:landscape) { body { border-top:3px solid #0f0; } }
+/* 640x480 ~ PORTRAIT */
+@media all and (min-width:640px) and (orientation:portrait) { body { border-top:3px solid #0f0; } }
+
+/* 800x600 ~ LANDSCAPE */
+@media all and (min-width:800px) and (orientation:landscape) { body { border-top:3px solid #0f0; } }
+
+/* 1024x768 ~ LANDSCAPE */
+@media all and (min-width:1024px) and (orientation:landscape) { body { border-top:3px solid #ff0; } }
+
+/* 1440x1080 ~ LANDSCAPE (HD) */
+@media all and (min-width:1440px) and (orientation:landscape) { body { border-top:3px solid #f80; } }
+
+/* 2880x2160 ~ LANDSCAPE (4K) */
+@media all and (min-width:2880px) and (orientation:landscape) { body { border-top:3px solid #f00; } }

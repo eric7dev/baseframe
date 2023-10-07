@@ -1,0 +1,41 @@
+<IfModule mod_rewrite.c>
+  #DocumentRoot /var/www/html/baseframe/logs
+  #AllowOverride All
+
+  Options -Indexes
+  RewriteEngine On
+  RewriteBase /
+
+  # NOTE: Send everything else to the index page
+  #RewriteRule ^index\.php$ - [L,QSA]
+  RewriteRule ^(.*)$ - [L,QSA]
+  #RewriteRule ^(.*)$ /baseframe/public/index.php?url=home [L,QSA]
+
+  #RewriteRule ^(.*)$ index.php?url=$1 [L,QSA]
+  #RewriteRule ^(.*)$ index.php?url=$1 [L]
+
+  # NOTE: Accept loading of files and directories
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  #RewriteCond %{REQUEST_FILENAME} !-l
+
+  ErrorDocument 404 /baseframe/public/index.php?url=404
+  ErrorDocument 403 /baseframe/public/index.php?url=403
+  ErrorDocument 401 /baseframe/public/index.php?url=401
+  Redirect 404 /baseframe/public/index.php?url=404
+  Redirect 403 /baseframe/public/index.php?url=403
+  Redirect 401 /baseframe/public/index.php?url=401
+  #Redirect 200 /baseframe/public/index.php?url=home
+</IfModule>
+
+<IfModule mod_authz_core.c>
+  <FilesMatch "(^#.*#|\.(db|info|log|ini|bak|conf|dist|fla|in[ci]|orig|psd|sh|sql|sw[op])|~)$">
+    Require all denied
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(ttf|ttc|otf|eot|woff|font.css)$">
+    Header set Access-Control-Allow-Origin "*"
+  </FilesMatch>
+</IfModule>

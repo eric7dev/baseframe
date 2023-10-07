@@ -1,0 +1,23 @@
+.latestposts {
+    width:100%;
+    border:1px dotted #0f0;
+    font-size:0;
+}
+.latestposts li {
+    font-size:20px;
+    width:49%;
+    display:inline-block;
+    border:1px dotted #0f0;
+    padding:0.2em;
+    margin:0.4%;
+    background-color:#040;
+}
+.latestposts li a {
+    background-color:#080;
+    display:block;
+    padding:0.2em;
+}
+.latestposts li:hover {
+    background-color:#070;
+    color:#ff0;
+}

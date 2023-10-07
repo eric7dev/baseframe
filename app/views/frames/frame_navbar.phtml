@@ -1,0 +1,11 @@
+<div id="searchbar">
+  <input id="searchquery" type="text" value="" placeholder="Search Query" alt="Search Query"/>
+  <input id="searchbutton" type="submit" value="SEARCH" alt="Search"/>
+</div>
+<ul id="navbar" class="menu">
+	 <li class="menuitem <?php if( $ENV_VARS['CURRENTPAGE'] == 'home' ){ echo 'active'; } ?>"><a href="?url=home">Home</a></li>
+	 <li class="menuitem <?php if( $ENV_VARS['CURRENTPAGE'] == 'services' ){ echo 'active'; } ?>"><a href="?url=services">Services</a></li>
+	 <li class="menuitem <?php if( $ENV_VARS['CURRENTPAGE'] == 'contact' ){ echo 'active'; } ?>"><a href="?url=contact">Contact</a></li>
+  <li class="menuitem <?php if( $ENV_VARS['CURRENTPAGE'] == 'blog' ){ echo 'active'; } ?>"><a href="?url=blog">Blog</a></li>
+</ul>
+<hr class="hr" />

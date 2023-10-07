@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>7thChosen's Site: Under Maintenance</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="7thChosen" />
+    <meta name="description" content="7thChosen\'s Website Under Maintenance" />
+    <meta name="author" content="7thChosen" />
+    <link rel="icon" href="./guis/assets/favicon_alert.png" type="image/x-icon" />
+    <style type="text/css">
+     /*
+        #0a2397 - dark blue 
+        #4593f0 - light blue
+      */
+
+     * {
+       margin:0;
+       padding:0;
+       border:none;
+       box-sizing:border-box;
+       font-family:arial;
+       overflow:hidden;
+     }
+     html {
+       position:absolute;
+       top:0px;
+       left:0px;
+       width:100%;
+       height:100%;
+       margin:0px;
+       padding:0px;
+       overflow:hidden;
+     }
+     body {
+       background: transparent url('./guis/assets/pattern.png') repeat 0px 0px;
+       position:absolute;
+       top:0px;
+       left:0px;
+       width:99%;
+       height:100%;
+       margin:0px;
+       padding-top:1%;
+       padding-left:0.1%;
+       padding-right:0.1%;
+			    padding-bottom:1%;
+     }
+     h1 {
+       background-color:#ffd600;
+       color:black;
+       font-size:1em;
+       line-height:0.6em;
+       padding-top:3%;
+       margin-bottom:7%;
+       width:100%;
+       display:inline-block;
+       border:3px solid black;
+     }
+     h2{
+       font-size:1em;
+       padding-bottom:5px;
+     }
+     p{
+       font-size:0.4em;
+       text-wrap:word;
+       padding-right:10px;
+     }
+     #center {
+       margin:0 auto;
+       width:98%;
+       height:98%;
+       display:block;
+       background:black;
+       color:white;
+       font-size:50px;
+       text-align:center;
+       border:1px solid #555;
+     }
+     .blueprint {
+       background: -webkit-linear-gradient(135deg, #4593f0, #0a2397);
+       background: -o-linear-gradient(135deg, #4593f0, #0a2397);
+       background: -moz-linear-gradient(135deg, #4593f0, #0a2397);
+       background: linear-gradient(135deg, #4593f0, #0a2397);
+       width:40%;
+       height:50%;
+       margin:0 auto;
+       border:1px solid #999;
+       box-shadow:0px 0px 5px #4593f0;
+       border-radius:5px;
+       position:relative;
+       overflow:hidden;      
+     }
+     .minitemplate {
+       width:98%;
+       border:1px solid #ccf;
+       padding:1%;
+       margin:1%;
+       height:97%;
+       background:none;
+       position:absolute;
+       top:0;
+       left:0;
+       font-size:0.5em;
+     }
+     .miniheader {
+       position:absolute;
+       top:2%;
+       left:2%;
+       width:96.5%;
+       font-size:0.5em;
+       border:1px solid white;
+       padding:1%;
+     }
+     .minilogo,
+     .minititle {
+       display:inline-block;
+       float:left;
+     }
+     .minilogo {
+       border:1px solid white;
+       padding-top:2px;
+       margin:0;
+       border-radius:25px;
+       width:7%;
+       margin-right:4px;
+       height:auto;
+       font-size:2em;
+       line-height:0.9em;
+       vertical-align:top;
+     }
+			  .mininavbar {
+       display:inline-block;
+       float:right;
+			    width:25%;
+     }
+			  .mininavbar li {
+			    width:100%;
+			    display:inline-block;
+			    overflow:hidden;
+			  }
+     .at {
+       color:white;
+       text-decoration:none;
+       cursor:initial;
+     }
+     .minititle {
+       font-size:1.7em;
+       font-weight:bold;
+			    width:65%;
+			    border:1px solid white;
+			    overflow:hidden;
+       text-align:left;
+       padding-left:4px;
+     }
+     .minicontent {
+       position:absolute;
+       top:23%;
+       left:2%;
+       width:70%;
+       height:65%;
+       border:1px solid white;
+       text-align:justify;
+       padding-left:1%;
+       
+     }
+     .minisidebar {
+       position:absolute;
+       top:23%;
+       right:2%;
+       width:24%;
+       height:65%;
+       border:1px solid white;
+       padding:2px;
+       list-style-type:none;
+     }
+     .minisidebar li {
+       width:100%;
+       border:1px solid white;
+       margin-bottom:2px;
+       padding:3px;
+       font-size:0.5em;
+			    list-style-type:none;
+       text-align:left;
+     }
+     .mininavbar {}
+     .mininavbar li {
+       border:1px solid white;
+       padding:5px;
+       margin-right:2px;
+			    list-style-type:none;
+     }
+     .minisidebar li:hover {
+       background-color:#4593f0;
+       cursor:pointer;
+     }
+     .mininavbar li:hover {
+       background-color:#0a2397;
+       cursor:pointer;
+     }
+     .minifooter {
+       width:99%;
+       margin:0.5%;
+       padding:0.4%;
+       border:1px solid white;
+       position:absolute;
+       bottom:0;
+       left:0;
+       font-size:0.5em;
+     }
+     .mobile_s, .mobile_m, .mobile_b{
+       display:none;
+     }
+     .counter {
+       position:absolute;
+       bottom:3px;
+       right:3px;
+       font-size:0.6em;
+     }
+     @media (max-width: 420px){
+       h1 {
+         font-size:0.5em;
+       }
+       .minisidebar li{
+		       width:100%;
+		       border:1px solid white;
+		       margin-bottom:2px;
+		       font-size:0.5em;
+		     }
+		     .miniheader{
+		       font-size:0.2em;
+		     }
+     }
+     @media (min-width: 420px){
+       .mobile_s{
+         display:block;
+       }
+     }
+     @media (min-width: 900px){
+       .mobile_s, .mobile_m{
+         display:block;
+       }
+     }
+     @media (min-width: 1300px){
+       .mobile_s, .mobile_m, .mobile_b{
+         display:block;
+       }
+     }
+     }
+    </style>
+  </head>
+  <body>
+    <div id="center">
+      <h1>Under Maintenance...</h1>
+      <div class="blueprint">
+	       <div class="minitemplate">
+	         <div class="miniheader">
+	           <div class="minilogo">&#9737;</div>
+	           <div class="minititle">7thChosen's Site &#9728;</div>
+	           <div class="mininavbar">
+	             <ul>
+		              <li>Login</li>
+	             </ul>
+	           </div>
+	         </div>
+	         <meta name="keywords" content="7thChosen" />
+	         <div class="minicontent">
+            <h2>Lorem Ipsum.</h2>
+            <p class="mobile_s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a mi mi. Vivamus condimentum enim ipsum, et pretium eros consequat eget. In hac habitasse platea dictumst. Fusce volutpat lectus eu aliquet ultricies. Suspendisse dictum erat rhoncus, porta orci non, condimentum massa.</p>
+            <p class="mobile_m">Quisque pulvinar urna et molestie iaculis. Suspendisse hendrerit tellus vitae magna faucibus pulvinar.</p>
+            <div class="counter">#.<span>
+              <?php $file="visit_counter";
+              $linecount=0;
+              $handle=fopen($file, "r");
+              while(!feof($handle)){
+                $line=fgets($handle);
+                $linecount++;
+              }
+              fclose($handle);
+              echo $linecount; ?>
+            </span></div>
+          </div>
+	         <ul class="minisidebar">
+	           <li>1. Blog</li>
+	           <li>2. Services</li>
+	           <li>3. Contact</li>
+	           <li>4. Chat</li>
+	           <li>5. RSS</li>
+	         </ul>
+	         <div class="minifooter">footer@2016</div>
+	       </div>
+	       
+      </div>
+    </div>
+    <?php
+    $txt = "1";
+    file_put_contents('visit_counter', $txt.PHP_EOL , FILE_APPEND);
+    ?>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<div id="slider">
+	 <ul id="slides">
+		  <li id="slide1" class="slide activeslide"><span>Slide &num;1 caption</span><img src="imgs/slides/slide1.png" alt="slide 1" /></li>
+		  <li id="slide2" class="slide"><span>Slide &num;2 caption</span><img src="imgs/slides/slide2.png" alt="slide 2" /></li>
+		  <li id="slide3" class="slide"><span>Slide &num;3 caption</span><img src="imgs/slides/slide3.png" alt="slide 3" /></li>
+	 </ul>
+  <div class="navigationwrapper">
+	   <div id="sliderprevious" class="slidernav prev" onclick="prevslide();">&lt;</div>
+    <div id="slidertoggle" class="slidernav" onclick="slideshow();">&#9654;</div>
+	   <div id="slidernext" class="slidernav next" onclick="nextslide();">&gt;</div>
+  </div>
+  <div id="slidernav">
+    <ul id="slidernavlinks">
+      <li onclick="gotoslide(1);">▣</li>
+      <li onclick="gotoslide(2);">□</li>
+      <li onclick="gotoslide(3);">□</li>
+    </ul>
+  </div>
+</div>
+
+<script type='text/javascript' charset='UTF-8' src="./libs/slider.js"></script>

@@ -1,0 +1,27 @@
+AuthType Basic
+AuthName "Restricted Content"
+AuthUserFile /var/www/html/baseframe/mgmt/.htpassfile
+Require valid-user
+
+<IfModule authz_core_module>
+ 	Require all denied
+</IfModule>
+
+<IfModule !authz_core_module>
+ 	Deny from all
+</IfModule>
+
+<IfModule mod_rewrite.c>
+  Options -Indexes
+  RewriteEngine On
+  RewriteBase /
+
+  RewriteRule ^index\.php$ - [L,QSA]
+
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+
+  ErrorDocument 404 /baseframe/public/index.php?url=404
+  ErrorDocument 403 /baseframe/public/index.php?url=403
+  ErrorDocument 401 /baseframe/public/index.php?url=401
+</IfModule>

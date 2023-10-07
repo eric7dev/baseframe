@@ -1,0 +1,16 @@
+<div id="userprofile_wrapper">
+  <h1>Profile</h1>
+  
+  <?php
+
+  if ( $_SESSION['user'] == 'guest' ) {
+  echo "<h2>Welcome visitor!</h2><p>Your are currently authenticated as a Guest with limited access.<br/><br/>To access all the features please create a new account and login.<br/><br/><span>Thank you.</span></p>";
+  } else {
+  echo "<p>User profile page.</p>";
+  }
+
+  ?>
+
+  <input type="text" value="<?php echo $_SESSION['user']; ?>" placeholder="test" alt="My Profile"/>
+
+</div>

@@ -1,0 +1,7 @@
+<svg height="100" width="100">
+  <rect height="100" width="100" x="0" y="0" fill="black"/>
+  <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4"/>
+  <circle cx="35" cy="40" r="5" stroke="green" stroke-width="4"/>
+  <circle cx="65" cy="40" r="5" stroke="green" stroke-width="4"/>
+  <path d="M 30 65 q 20 20 40 0" stroke="green" stroke-width="5" fill="none" />
+</svg>

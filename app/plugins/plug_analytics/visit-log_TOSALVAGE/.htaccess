@@ -1,0 +1,5 @@
+<IfModule mod_authz_core.c>
+  <FilesMatch "(^#.*#|\.(db|info|log|bak|conf|dist|fla|in[ci]|orig|psd|sh|sql|sw[op])|~)$">
+    Require all denied
+  </FilesMatch>
+</IfModule>

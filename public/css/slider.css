@@ -1,0 +1,123 @@
+#slider {
+  width:100%;
+  height:auto;
+  border:1px dotted #fa0;
+  position:relative;
+  padding:3px 3px 10px;
+  overflow:hidden;
+}
+#slides {
+  list-style:none;
+  display:block;
+}
+.slide {
+  width:100%;
+  display:none;
+  vertical-align:top;
+  border:1px solid #fff;
+}
+.activeslide {
+  display:block;
+  width:100%;
+  clear:both;
+  vertical-align:top;
+  height:auto;
+  border:1px solid #fff;
+}
+.activeslide img {
+  height:300px;
+  width:100%;
+}
+#slide1 span,
+#slide2 span,
+#slide3 span {
+  position:absolute;
+  bottom:40%;
+  left:9%;
+  font-size:3em;
+  color:#fa0;
+  text-shadow:2px 2px 2px #000;
+  font-weight:bold;
+}
+.navigationwrapper {
+  margin:0 auto;
+  width:120px;
+  height:30px;
+}
+.slidernav {
+  display:block;
+  float:left;
+}
+#sliderprevious:hover {
+  background-color:#777;
+}
+#sliderprevious,
+#slidertoggle,
+#slidernext {
+  padding:0.3em 0.4em;
+  width:2.5em;
+  background-color:#555;
+  color:white;
+}
+#sliderprevious {
+  display:inline-block;
+  border:1px solid #fff;
+  text-align:center;
+  cursor:pointer;
+  border-bottom-left-radius:8px;
+}
+#slidertoggle:hover {
+  background-color:#777;
+}
+#slidertoggle {
+  display:inline-block;
+  border:1px solid #fff;
+  text-align:center;
+  cursor:pointer;
+}
+#slidernext:hover {
+  background-color:#777;
+}
+#slidernext {
+  display:inline-block;
+  border:1px solid #fff;
+  text-align:center;
+  cursor:pointer;
+  border-bottom-right-radius:8px;
+}
+#slidernav {
+  position:absolute;
+  width:100%;
+  left:0%;
+  bottom:1.6em;
+  padding:0;
+  color:#fff;
+  font-size:1.5em;
+  line-height:1em;
+}
+#slidernavlinks {
+  border:1px solid #fff;
+  width:120px;
+  display:block;
+  margin:0 auto;
+  margin-bottom:0;
+  padding:0.1em 0 0.2em 0.7em;
+  background-color:rgba(50, 50, 50, 0.4);
+  border-top-left-radius:8px;
+  border-top-right-radius:8px;
+}
+#slidernavlinks li {
+  display:inline-block;
+  cursor:pointer;
+  width:20%;
+}
+#slider #slidercontrols div {
+  display:inline-block;
+  width:40px;
+  height:auto;
+  border:1px solid #0f0;
+  background-color:#040;
+  text-align:center;
+  cursor:pointer;
+  padding-bottom:2px;
+}

@@ -1,0 +1,5 @@
+<svg height="100" width="100">
+  <rect height="100" width="100" x="0" y="0" fill="black"/>
+  <rect height="50" width="60" x="20" y="20" fill="none" stroke="green" stroke-width="10" stroke-linejoin="round"/>
+  <line x1="12" y1="84" x2="88" y2="84" stroke="green" stroke-width="12" stroke-linecap="round"/>
+</svg>

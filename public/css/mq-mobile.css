@@ -1,0 +1,31 @@
+/* 432~800 x AUTO ~ PHONE PORTRAIT */
+@media all and (min-width: 432px) and (max-width: 800px) and (orientation: portrait) {
+  body {
+    border-top:3px solid #0f0;
+    min-width:100%;
+  }
+  #sidebar { display:none!important; }
+  #navbar li:nth-child(1),
+  #navbar li:nth-child(2),
+  #navbar li:nth-child(4),
+  #navbar li:nth-child(5) { display:none; }
+}
+
+/* 843~900 x AUTO ~ PHONE LANDSCAPE */
+@media all and (min-width: 843px) and (max-width: 900px) and (orientation: landscape) {
+  body {
+    border-top:3px solid #fa0;
+    width:100%;
+  }
+  #sidebar { display:none; }
+  #navbar li:nth-child(1),
+  #navbar li:nth-child(2),
+  #navbar li:nth-child(4),
+  #navbar li:nth-child(5) { display:none; }
+}
+
+/* IPHONE */
+
+/* ANDROID */
+
+/* TABLET */

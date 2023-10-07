@@ -1,0 +1,57 @@
+#chatbox {
+    width:100%;
+    border:1px solid #ff0;
+    padding:10px;
+}
+#chatlog {
+    background-color:#333;
+    color:#afa;
+    width:79%;
+    padding:0.2em;
+    margin-bottom:10px;
+    height:300px;
+    display:inline-block;
+    border:1px solid #0f0;
+    overflow-y:scroll;
+}
+#chatlog li {
+    width:100%;
+    display:inline-block;
+    border-bottom:1px dotted #aaa;
+}
+#chatlog span.login {
+    color:#5f5;
+}
+#chatlog span.logout {
+    color:#faa;
+}
+#chatbox input[type="text"]{
+    width:79%;
+    display:inline-block;
+    margin-right:0;
+}
+#chatbox input[type="submit"]{
+    width:19%;
+    display:inline-block;
+    float:right;
+}
+#userslist {
+    border:1px solid #0f0;
+    background-color:#333;
+    width:20%;
+    position:relative;
+    float:right;
+    overflow:hidden;
+    overflow-y:scroll;
+    font-size:0.7em;
+    padding:0.2em;
+    height:300px;
+    color:#afa;
+}
+#userslist h2{
+    border-bottom:1px solid #bbb;
+    margin-bottom:0px;
+}
+#userslist li {
+    border-bottom:1px solid #777;
+}

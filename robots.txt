@@ -1,0 +1,7 @@
+Sitemap: /public/sitemap.xml
+User-agent: *
+Disallow: /
+Disallow: /admin/
+Disallow: /mgmt/
+Disallow: /app/
+Disallow: /public/

@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /mgmt/
+Disallow: /app/
+Disallow: /public/

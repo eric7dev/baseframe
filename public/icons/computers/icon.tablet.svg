@@ -1,0 +1,6 @@
+<svg height="100" width="100">
+  <rect height="100" width="100" x="0" y="0" fill="black"/>
+  <rect height="60" width="50" x="25" y="20" fill="none" stroke="green" stroke-width="5" stroke-linejoin="round" />
+  <rect height="42" width="40" x="30" y="25" fill="none" stroke="green" stroke-width="2"/>
+  <circle cx="50" cy="73" r="4" fill="green"/>
+</svg>

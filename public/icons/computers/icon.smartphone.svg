@@ -1,0 +1,7 @@
+<svg height="100" width="100">
+  <rect height="100" width="100" x="0" y="0" fill="black"/>
+  <rect height="40" width="30" x="35" y="30" fill="none" stroke="green" stroke-width="4" stroke-linejoin="round"/>
+  <line x1="48" y1="36" x2="52" y2="36" stroke="green" stroke-width="3" stroke-linecap="round"/>
+  <rect height="21" width="20" x="40" y="40" fill="none" stroke="green" stroke-width="2"/>
+  <circle cx="50" cy="65" r="2" fill="green"/>
+</svg>

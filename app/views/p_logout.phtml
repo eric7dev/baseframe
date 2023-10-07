@@ -1,0 +1,11 @@
+<div id="logout_wrapper">
+  <h1>Logout</h1>
+  <p>Are you sure you want to log out of this session?.</p>
+  <form id="logout_form" method="POST" action="index.php?url=logoutform" onSubmit="console.log('test');'">
+    <input id="username" type="text" placeholder="Your User Name:" name="name" value="<?php echo $_POST['name']; ?>" /><br/>
+    <input id="cookie" type="text" placeholder="SESSION-COOKIE" name="session_cookie" value="<?php echo $_POST['email']; ?>" /><br/>
+    <button type="button">CANCEL</button> <br/>
+    <input type="submit" value="LOGOUT"><br/>
+  </form>
+  <script>document.getElementById('username').focus();</script>
+</div>
