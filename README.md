@@ -2,7 +2,7 @@ CODENAME: Baseframe
 ========================================
 EXCERPT: Basic Website Framework
 ----------------------------------------
-AUTHOR: Erich S.R.
+AUTHOR: Erich S.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. OVERVIEW
